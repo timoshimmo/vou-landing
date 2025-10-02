@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOU: The Bespoke Fashion Revolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-vou-purple sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <a href="/">
+                    <img src="img/vou_icon.png" width="100" />
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">How It Works</a>
+                <a href="#measurement" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Virtual Measurement</a>
+                <a href="#tryon" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Try-On</a>
+            </div>
+            <a href="#cta" class="bg-vou-gold text-vou-purple px-6 py-2 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+                Try Ai Measurement
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-hero min-h-screen flex items-center justify-center text-center text-white relative">
+            <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
+            <div class="relative z-10 px-6 py-20 md:py-32">
+                <h1 id="hero-headline" class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg text-vou-gold">
+                    Your Vision. Our Designers. <br> A Perfect Fit.
+                </h1>
+                <p id="hero-subheadline" class="mt-4 md:mt-6 text-lg md:text-xl font-medium max-w-2xl mx-auto drop-shadow-md text-white">
+                    The AI-powered platform for bespoke fashion.
+                </p>
+                <div class="mt-8 md:mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="font-bold shadow-xl transition-colors duration-300 text-lg md:text-xl">
+                        <img src="img/img_gplay_soon.png" width="300" />
+                    </a>
+                    <a href="#" class="font-bold shadow-xl transition-colors duration-300 text-lg md:text-xl">
+                        <img src="img/img_appstore_soon.png" width="300" />
+                    </a>
+                </div>
+            </div>
+        </section>
+         <!-- Problem/Solution Section -->
+        <section class="py-20 bg-white" id="how-it-works">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-3xl md:text-4xl text-center font-bold text-vou-purple mb-12">How VOU Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-vou-purple p-6 rounded-full shadow-lg mb-4">
+                            <!--<svg class="w-12 h-12 text-vou-purple" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16H8v-8h3v8zm4-8h-3V6h3v4z"></path></svg>-->
+                            <img src="img/ic_discover.png" alt="" />
+                        </div>
+                        <h3 class="text-2xl font-bold text-vou-gold mb-2">1. Discover</h3>
+                        <p class="text-gray-600 max-w-sm text-center">Browse our curated gallery of designs and styles by skilled designers from the heart of Africa's fashion scene.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-vou-purple p-6 rounded-full shadow-lg mb-4">
+                            <!--<svg class="w-12 h-12 text-vou-purple" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 13.29l-4.59-4.59c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41L15.29 12H6c-1.1 0-2 .9-2 2s.9 2 2 2h9.29l-2.59 2.59c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41z"></path></svg>-->
+                            <img src="img/ic_customize.png" alt="" width="80"/>
+                        </div>
+                        <h3 class="text-2xl font-bold text-vou-gold mb-2">2. Customize</h3>
+                        <p class="text-gray-600 max-w-sm text-center">Use our AI tools to get a perfect fit and personalize every detail, from body measurements to fabrics.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-vou-purple p-6 rounded-full shadow-lg mb-4">
+                            <!--<svg class="w-12 h-12 text-vou-purple" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path><path d="M12 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>-->
+                            <img src="img/ic_design.png" alt="" width="80"/>
+                        </div>
+                        <h3 class="text-2xl font-bold text-vou-gold mb-2">3. Create</h3>
+                        <p class="text-gray-600 max-w-sm text-center">Your unique piece is handcrafted by a skilled fashion designer and delivered securely to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-use bg-cover bg-center py-20 relative" id="measurement">
+            <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
+            <div class="container mx-auto px-6 relative z-10 text-white text-center">
+                <div class="grid grid-cols-2 xs:grid-cols-1 gap-8">   
+                    <video
+                        class="mx-auto"
+                        playsInline
+                        loop
+                        src="vid/vid_vou_measurement.webm"
+                        autoplay
+                    >
+                    </video>
+                    <div class="flex flex-col justify-center items-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-5 text-vou-gold">Virtual Measurement</h2>
+                        <p class="text-white mb-12">Our virtual measurement helps our users to quickly and efficietly get their body measuremet ready to be shared with available desigers to use for customizing ad styling clothes tailor-made for that customer</p>
+                        <a href="#cta" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+                            Try Ai Measurement
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Testimonials Section -->
+        <section class="bg-try-on bg-cover bg-center py-20 relative" id="tryon">
+            <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
+            <div class="container mx-auto px-6 relative z-10 text-white text-center">
+                <div class="grid grid-cols-2 xs:grid-cols-1 gap-8">   
+                    <div class="flex flex-col justify-center items-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-5 text-vou-gold">Virtual Try-On</h2>
+                        <p class="text-white mb-12">Our virtual try-on provides our users a way to efficietly see themselves in their favourite style and share on social media before getting their styled clothes</p>
+                        <a href="#cta" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+                            Try Virtual Try-On
+                        </a>
+                    </div>
+                     <video
+                        class="mx-auto"
+                        playsInline
+                        loop
+                        src="vid/vid_tryon_sample.webm"
+                        autoplay
+                    >
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <!--<section class="bg-testimonials bg-cover bg-center py-20 relative" id="testimonials">
+            <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
+            <div class="container mx-auto px-6 relative z-10 text-white text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-vou-gold">Trusted by the Discerning</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg">
+                        <p class="italic text-lg">
+                            "My prom dress was a showstopper! The fit was perfect, and the beading was flawless. It was so much more than a dress; it was a work of art."
+                        </p>
+                        <p class="font-semibold mt-4 text-vou-purple">- Jane D., Prom-goer, Florida</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg">
+                        <p class="italic text-lg">
+                            "VOU has been a game-changer for my business. I can now reach a global clientele without worrying about logistics. It's truly a seamless experience."
+                        </p>
+                        <p class="font-semibold mt-4 text-vou-purple">- Funke A., VOU Designer, Lagos</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Socials Section -->
+        <section class="py-20 bg-vou-purple text-white" id="how-it-works">
+            <div class="container mx-auto px-6 text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                    <div class="py-4">
+                         <video
+                            playsInline
+                            loop
+                            autoplay
+                            muted
+                            src="vid/vid_reel_landscape.mp4"
+                        >
+                        </video>
+                    </div>
+                    <div class="p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Follow the Journey</h3>
+                        <p class="text-white leading-relaxed">
+                           Join our community to see behind-the-scenes content, new designer collections, and style inspiration daily.
+                        </p>
+                        <div class="flex justify-center space-x-6 mt-10">
+                            <!-- Facebook Icon -->
+                            <a href="https://www.facebook.com/profile.php?id=61581303760596&mibextid=ZbWKwL" class="text-vou-gold hover:text-vou-purple transition-colors duration-300 transform hover:scale-110">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.875v-6.988h-2.54V12h2.54V9.797c0-2.51 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.774-1.63 1.57v1.888h2.774l-.443 2.89h-2.33V22c4.781-.747 8.438-4.884 8.438-9.875z"/></svg>
+                            </a>
+                            <!-- Twitter / X Icon -->
+                            <a href="http://tiktok.com/@vouai72" class="text-vou-gold hover:text-vou-purple transition-colors duration-300 transform hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10"  fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                </svg>
+                            </a>
+                            <!-- Instagram Icon -->
+                            <a href="#" class="text-vou-gold hover:text-vou-purple transition-colors duration-300 transform hover:scale-110">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2c-2.485 0-4.5 2.015-4.5 4.5v11c0 2.485 2.015 4.5 4.5 4.5h9c2.485 0 4.5-2.015 4.5-4.5v-11c0-2.485-2.015-4.5-4.5-4.5h-9zm-1.5 4.5c0-.828.672-1.5 1.5-1.5h9c.828 0 1.5.672 1.5 1.5v9c0 .828-.672 1.5-1.5 1.5h-9c-.828 0-1.5-.672-1.5-1.5v-9zm3 3c0 2.761 2.239 5 5 5s5-2.239 5-5-2.239-5-5-5-5 2.239-5 5zm5-3c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-20 bg-white" id="cta">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-vou-purple mb-4">
+                    Ready to Wear Your Story?
+                </h2>
+                <p class="text-gray-600 max-w-xl mx-auto mb-8">
+                    Download VOU today and transform your style with a perfect fit, every time.
+                </p>
+                <div class="flex justify-center space-x-4">
+                     <a href="#" class="font-bold shadow-xl transition-colors duration-300 text-lg md:text-xl">
+                        <img src="img/img_gplay_soon.png" width="300" />
+                    </a>
+                    <a href="#" class="font-bold shadow-xl transition-colors duration-300 text-lg md:text-xl">
+                        <img src="img/img_appstore_soon.png" width="300" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vou-purple text-white py-8">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 VOU. All rights reserved.</p>
+            <div class="mt-4 space-x-4 text-gray-300">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="contact-us.html" class="hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-button" class="fixed bottom-4 right-4 bg-vou-gold text-vou-purple w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-[#ac7d39] transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 9h8v2H8V9zm8 3H8v2h8v-2z"></path>
+        </svg>
+    </button>
+
+    <!-- Chatbot Popup -->
+    <div id="chat-popup" class="flex-col">
+        <div id="chat-header">
+            <h3 class="font-bold">Ask Our AI Stylist ✨</h3>
+            <button id="close-chat-button" class="text-2xl font-bold">&times;</button>
+        </div>
+        <div id="chat-body" class="overflow-y-auto p-4 flex flex-col-reverse">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Ask a question..." class="flex-grow rounded-full px-4 py-2 text-sm">
+            <button id="send-chat-button" class="bg-vou-purple text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#ac7d39]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+               
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=";
+        const apiKey = "AIzaSyBq_sS-k0QedKjesiJnkucbnbwUmUm2u6o"; // Canvas will provide this at runtime
+
+        const generateStoryButton = document.getElementById('generate-story-button');
+        const heroHeadline = document.getElementById('hero-headline');
+        const heroSubheadline = document.getElementById('hero-subheadline');
+
+        generateStoryButton.addEventListener('click', async () => {
+            const originalHeadline = heroHeadline.innerHTML;
+            const originalSubheadline = heroSubheadline.innerHTML;
+            
+            heroHeadline.innerHTML = "Generating Your Style...";
+            heroSubheadline.innerHTML = "<span class='loading-dots'></span>";
+
+            const userPrompt = "Generate a short, aspirational one-sentence slogan for a bespoke fashion brand. The brand focuses on creating custom garments that tell a personal story. The tone should be elegant and inspiring. Do not include the brand name.";
+            const systemPrompt = "You are a creative brand copywriter. Provide only a single, concise sentence for a fashion slogan.";
+
+            const payload = {
+                contents: [{ parts: [{ text: userPrompt }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+                tools: [{ "google_search": {} }],
+            };
+
+            const generateContent = async (payload, retries = 3, delay = 1000) => {
+                try {
+                    const response = await fetch(API_URL + apiKey, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 429 && retries > 0) {
+                        await new Promise(res => setTimeout(res, delay));
+                        return generateContent(payload, retries - 1, delay * 2);
+                    }
+                    if (!response.ok) {
+                        throw new Error(`API call failed: ${response.statusText}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error("Error fetching from Gemini API:", error);
+                    if (retries > 0) {
+                        await new Promise(res => setTimeout(res, delay));
+                        return generateContent(payload, retries - 1, delay * 2);
+                    } else {
+                        throw error;
+                    }
+                }
+            };
+
+            try {
+                const result = await generateContent(payload);
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (text) {
+                    heroHeadline.innerHTML = `<span class="text-vou-gold">Your Personal Style.</span><br> ${text}`;
+                    heroSubheadline.innerHTML = "Created by our AI Stylist.";
+                } else {
+                    heroHeadline.innerHTML = originalHeadline;
+                    heroSubheadline.innerHTML = "Sorry, something went wrong. Try again.";
+                }
+            } catch (error) {
+                console.error("Error in generate story function:", error);
+                heroHeadline.innerHTML = originalHeadline;
+                heroSubheadline.innerHTML = "Sorry, something went wrong. Try again.";
+            }
+        });
+
+        const chatbotButton = document.getElementById('chatbot-button');
+        const chatPopup = document.getElementById('chat-popup');
+        const closeChatButton = document.getElementById('close-chat-button');
+        const chatInput = document.getElementById('chat-input');
+        const sendChatButton = document.getElementById('send-chat-button');
+        const chatBody = document.getElementById('chat-body');
+
+        let chatHistory = [];
+
+        chatbotButton.addEventListener('click', () => {
+            chatPopup.style.display = 'flex';
+        });
+
+        closeChatButton.addEventListener('click', () => {
+            chatPopup.style.display = 'none';
+        });
+
+        const sendMessage = async () => {
+            const userMessage = chatInput.value.trim();
+            if (userMessage === '') return;
+
+            // Display user message
+            const userBubble = document.createElement('div');
+            userBubble.textContent = userMessage;
+            userBubble.className = 'message-bubble user-message';
+            chatBody.prepend(userBubble);
+            chatInput.value = '';
+
+            // Add to chat history
+            chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
+
+            // Display loading bubble
+            const loadingBubble = document.createElement('div');
+            loadingBubble.innerHTML = '<span class="loading-dots">Thinking...</span>';
+            loadingBubble.className = 'message-bubble ai-message';
+            chatBody.prepend(loadingBubble);
+
+            const userQuery = `I want to know about Nigerian fashion and styling tips. Tell me about "${userMessage}".`;
+            const systemPrompt = "You are an expert AI stylist for a bespoke fashion brand called VOU. Your goal is to provide helpful, concise, and friendly advice about Nigerian fashion, styling, fabrics, and culture. Keep your answers brief and encouraging.";
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+                tools: [{ "google_search": {} }],
+            };
+
+            const generateContent = async (payload, retries = 3, delay = 1000) => {
+                try {
+                    const response = await fetch(API_URL + apiKey, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 429 && retries > 0) {
+                        await new Promise(res => setTimeout(res, delay));
+                        return generateContent(payload, retries - 1, delay * 2);
+                    }
+                    if (!response.ok) {
+                        throw new Error(`API call failed: ${response.statusText}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error("Error fetching from Gemini API:", error);
+                    if (retries > 0) {
+                        await new Promise(res => setTimeout(res, delay));
+                        return generateContent(payload, retries - 1, delay * 2);
+                    } else {
+                        throw error;
+                    }
+                }
+            };
+            try {
+                const result = await generateContent(payload);
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                
+                chatBody.removeChild(loadingBubble);
+
+                const aiBubble = document.createElement('div');
+                aiBubble.textContent = text || 'Sorry, I am unable to provide a response at this time.';
+                aiBubble.className = 'message-bubble ai-message';
+                chatBody.prepend(aiBubble);
+
+                // Add AI message to chat history
+                if (text) {
+                    chatHistory.push({ role: "model", parts: [{ text: text }] });
+                }
+                
+            } catch (error) {
+                console.error("Error in AI stylist function:", error);
+                chatBody.removeChild(loadingBubble);
+                const errorBubble = document.createElement('div');
+                errorBubble.textContent = 'Sorry, something went wrong. Please try again.';
+                errorBubble.className = 'message-bubble ai-message';
+                chatBody.prepend(errorBubble);
+            }
+        };
+
+        sendChatButton.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

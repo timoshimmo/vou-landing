@@ -1,0 +1,145 @@
+ body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background-color: #2a1d39;
+        }
+        .text-vou-purple {
+            color: #2a1d39;
+        }
+        .bg-vou-purple {
+            background-color: #2a1d39;
+        }
+        .border-vou-purple {
+            border-color: #2a1d39;
+        }
+        .text-vou-gold {
+            color: #d3b27c;
+        }
+        .bg-vou-gold {
+            background-color: #d3b27c;
+        }
+        .bg-hero {
+            background-image: url('../img/banner_hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-how-it-works {
+            background-image: url('https://placehold.co/1920x800/FFD700/2D0B4B?text=Abstract+Pattern');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-testimonials {
+            background-image: url('https://placehold.co/1920x800/FFD700/2D0B4B?text=Abstract+Pattern');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-use {
+            background-image: url('../img/img_pattern_hero.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-try-on {
+            background-image: url('../img/img_pattern_hero_gold.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #chat-popup {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 350px;
+            height: 450px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+        }
+        #chat-header {
+            background: #2D0B4B;
+            color: #af8241;
+            padding: 1rem;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #chat-body {
+            flex-grow: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        #chat-input-container {
+            display: flex;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+        #chat-input {
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            margin-right: 0.5rem;
+        }
+        .message-bubble {
+            max-width: 80%;
+            padding: 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+        }
+        .user-message {
+            background: #2D0B4B;
+            color: #fff;
+            align-self: flex-end;
+            border-bottom-right-radius: 0;
+        }
+        .ai-message {
+            background: #af8241;
+            color: #2D0B4B;
+            align-self: flex-start;
+            border-bottom-left-radius: 0;
+        }
+        .loading-dots {
+            display: inline-block;
+        }
+        .loading-dots:after {
+            content: ' .';
+            animation: dots 1s steps(5, end) infinite;}
+        @keyframes dots {
+            0%, 20% {
+                color: rgba(0,0,0,0);
+                text-shadow:
+                    .25em 0 0 rgba(0,0,0,0),
+                    .5em 0 0 rgba(0,0,0,0);}
+            40% {
+                color: #2D0B4B;
+                text-shadow:
+                    .25em 0 0 rgba(0,0,0,0),
+                    .5em 0 0 rgba(0,0,0,0);}
+            60% {
+                text-shadow:
+                    .25em 0 0 #2D0B4B,
+                    .5em 0 0 rgba(0,0,0,0);}
+            80%, 100% {
+                text-shadow:
+                    .25em 0 0 #2D0B4B,
+                    .5em 0 0 #2D0B4B;}
+        }
+
+.reel-video {
+    height: 450px;
+    width: 480px;
+    transform: scaleX(-1);
+}
+
+.reel-video::-webkit-media-controls-enclosure {
+  transform: scaleX(-1);
+}
