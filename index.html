@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOU: The Bespoke Fashion Revolution</title>
+    <title>VOU-AI | The Bespoke Fashion Revolution</title>
+    <link rel="icon" type="image/x-icon" href="img/vou_fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
                 <a href="#measurement" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Virtual Measurement</a>
                 <a href="#tryon" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Try-On</a>
             </div>
-            <a href="#cta" class="bg-vou-gold text-vou-purple px-6 py-2 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+            <a href="https://fashion-tailors.vercel.app/measure" target="_blank" rel="noreferrer" class="bg-vou-gold text-vou-purple px-6 py-2 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
                 Try Ai Measurement
             </a>
         </nav>
@@ -89,7 +90,7 @@
         <section class="bg-use bg-cover bg-center py-20 relative" id="measurement">
             <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
             <div class="container mx-auto px-6 relative z-10 text-white text-center">
-                <div class="grid grid-cols-2 xs:grid-cols-1 gap-8">   
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">   
                     <video
                         class="mx-auto"
                         playsInline
@@ -101,7 +102,7 @@
                     <div class="flex flex-col justify-center items-center">
                         <h2 class="text-3xl md:text-4xl font-bold mb-5 text-vou-gold">Virtual Measurement</h2>
                         <p class="text-white mb-12">Our virtual measurement helps our users to quickly and efficietly get their body measuremet ready to be shared with available desigers to use for customizing ad styling clothes tailor-made for that customer</p>
-                        <a href="#cta" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+                        <a href="https://fashion-tailors.vercel.app/measure" target="_blank" rel="noreferrer" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
                             Try Ai Measurement
                         </a>
                     </div>
@@ -113,20 +114,21 @@
         <section class="bg-try-on bg-cover bg-center py-20 relative" id="tryon">
             <div class="absolute inset-0 bg-vou-purple opacity-70"></div>
             <div class="container mx-auto px-6 relative z-10 text-white text-center">
-                <div class="grid grid-cols-2 xs:grid-cols-1 gap-8">   
-                    <div class="flex flex-col justify-center items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">   
+                    <div class="flex flex-col justify-center items-center order-2 lg:order-1">
                         <h2 class="text-3xl md:text-4xl font-bold mb-5 text-vou-gold">Virtual Try-On</h2>
                         <p class="text-white mb-12">Our virtual try-on provides our users a way to efficietly see themselves in their favourite style and share on social media before getting their styled clothes</p>
-                        <a href="#cta" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
+                        <a href="https://fashion-tailors.vercel.app/home" target="_blank" rel="noreferrer" class="bg-vou-gold text-vou-purple w-[400px] px-6 py-4 rounded-full font-bold shadow-md hover:bg-[#ac7d39] transition-colors duration-300">
                             Try Virtual Try-On
                         </a>
                     </div>
                      <video
-                        class="mx-auto"
+                        class="mx-auto order-1 lg:order-2"
                         playsInline
                         loop
-                        src="vid/vid_tryon_sample.webm"
                         autoplay
+                        src="vid/vid_tryon_sample.webm"
+                        
                     >
                     </video>
                 </div>
@@ -229,20 +231,20 @@
     </footer>
 
     <!-- Chatbot Button -->
-    <button id="chatbot-button" class="fixed bottom-4 right-4 bg-vou-gold text-vou-purple w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-[#ac7d39] transition-colors duration-300">
+    <button id="home-chatbot-button" class="fixed bottom-4 right-4 bg-vou-gold text-vou-purple w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-[#ac7d39] transition-colors duration-300 z-20">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
             <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 9h8v2H8V9zm8 3H8v2h8v-2z"></path>
         </svg>
     </button>
 
     <!-- Chatbot Popup -->
-    <div id="chat-popup" class="flex-col">
+    <!--<div id="home-chat-popup" class="flex-col fixed bottom-4 right-4 z-50">
         <div id="chat-header">
-            <h3 class="font-bold">Ask Our AI Stylist ✨</h3>
+            <h3 class="font-bold">Ask Our AI ✨</h3>
             <button id="close-chat-button" class="text-2xl font-bold">&times;</button>
         </div>
         <div id="chat-body" class="overflow-y-auto p-4 flex flex-col-reverse">
-            <!-- Chat messages will be appended here -->
+            
         </div>
         <div id="chat-input-container">
             <input type="text" id="chat-input" placeholder="Ask a question..." class="flex-grow rounded-full px-4 py-2 text-sm">
@@ -253,17 +255,17 @@
                
             </button>
         </div>
-    </div>
+    </div> -->
 
     <script>
-        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=";
-        const apiKey = "AIzaSyBq_sS-k0QedKjesiJnkucbnbwUmUm2u6o"; // Canvas will provide this at runtime
+       /* const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=";
+        const apiKey = ""; // Canvas will provide this at runtime
 
-        const generateStoryButton = document.getElementById('generate-story-button');
+        //const generateStoryButton = document.getElementById('generate-story-button');
         const heroHeadline = document.getElementById('hero-headline');
-        const heroSubheadline = document.getElementById('hero-subheadline');
+        const heroSubheadline = document.getElementById('hero-subheadline');*/
 
-        generateStoryButton.addEventListener('click', async () => {
+       /* generateStoryButton.addEventListener('click', async () => {
             const originalHeadline = heroHeadline.innerHTML;
             const originalSubheadline = heroSubheadline.innerHTML;
             
@@ -321,10 +323,10 @@
                 heroHeadline.innerHTML = originalHeadline;
                 heroSubheadline.innerHTML = "Sorry, something went wrong. Try again.";
             }
-        });
+        }); */
 
-        const chatbotButton = document.getElementById('chatbot-button');
-        const chatPopup = document.getElementById('chat-popup');
+        /*const chatbotButton = document.getElementById('home-chatbot-button');
+        const chatPopup = document.getElementById('home-chat-popup');
         const closeChatButton = document.getElementById('close-chat-button');
         const chatInput = document.getElementById('chat-input');
         const sendChatButton = document.getElementById('send-chat-button');
@@ -426,7 +428,7 @@
             if (e.key === 'Enter') {
                 sendMessage();
             }
-        });
+        }); */
     </script>
 </body>
 </html>
